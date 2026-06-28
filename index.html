@@ -45,14 +45,13 @@
 
   a{color:inherit; text-decoration:none;}
 
-  .wrap{max-width:var(--max); margin:0 auto; padding:0 32px;}
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 8px;}
 
   /* ---------- metric signature element ---------- */
   .metric{
     font-family:var(--mono);
     font-weight:500;
     color:var(--ink);
-    border-bottom:2px solid var(--accent);
     padding-bottom:1px;
     white-space:nowrap;
   }
@@ -66,7 +65,7 @@
   }
   .nav-inner{
     display:flex; align-items:center; justify-content:space-between;
-    padding:16px 32px; max-width:var(--max); margin:0 auto;
+    padding:16px 8px; max-width:var(--max); margin:0 auto;
   }
   .nav-mark{
     display:flex; align-items:center; gap:10px;
@@ -143,7 +142,7 @@
   }
 
   /* ---------- section shell ---------- */
-  section{padding:64px 0 0;}
+  section{padding:80px 0 0;}
   .section-head{margin-bottom:48px;}
   .section-head .eyebrow{margin-bottom:14px;}
   h2.section-title{
@@ -165,7 +164,7 @@
   .company-block{position:relative; margin-bottom:64px;}
   .company-block:last-child{margin-bottom:0;}
   .company-block::before{
-    content:''; position:absolute; left:-32px; top:6px; width:9px; height:9px;
+    content:''; position:absolute; left:-38px; top:6px; width:9px; height:9px;
     border-radius:50%; background:var(--bg); border:2px solid var(--accent);
   }
   .company-head{
@@ -270,7 +269,7 @@
   <section class="hero">
     <p class="eyebrow">Technical Lead · Freshworks</p>
     <h1 class="name">Vignesh V</h1>
-    <p class="tagline">I design backend systems and microservices that scale across teams as much as traffic - and the platforms that let other engineers move faster too.</p>
+    <p class="tagline">I design backend systems and microservices that scale across teams as much as traffic and the platforms that let other engineers move faster too.</p>
     <div class="hero-links">
       <a class="btn" href="mailto:contactmevickey@gmail.com">Email</a>
       <a class="btn" href="https://linkedin.com/in/vignesh-venkatesan-lsde" target="_blank" rel="noopener">LinkedIn</a>
@@ -280,7 +279,7 @@
 
     <div class="stat-row">
       <div class="stat"><div class="num">9+</div><div class="label">Years in engineering</div></div>
-      <div class="stat"><div class="num">$9M</div><div class="label">Annual savings delivered</div></div>
+      <div class="stat"><div class="num">$9M</div><div class="label">Annual savings contributed in Verizon</div></div>
       <div class="stat"><div class="num">12+</div><div class="label">Engineers led</div></div>
       <div class="stat"><div class="num">40%</div><div class="label">Faster integration cycles</div></div>
     </div>
@@ -292,14 +291,15 @@
       <h2 class="section-title">Where I focus</h2>
     </div>
     <div class="pill-grid">
+      <span class="pill">Applied AI Engineering</span>
       <span class="pill">Microservices & Event-Driven Architecture</span>
+      <span class="pill">API Design (Rest/SOAP/gRPC)</span>
+      <span class="pill">Spec Driven Development</span>
+      <span class="pill">Technical Roadmap</span>
+      <span class="pill">Cross-functional Collaboration</span>
       <span class="pill">System Design</span>
       <span class="pill">Data Structures & Algorithms</span>
       <span class="pill">Problem Solving</span>
-      <span class="pill">Technical Roadmap</span>
-      <span class="pill">API Design & Contracts</span>
-      <span class="pill">Cross-functional Collaboration</span>
-      <span class="pill">Technical Mentorship</span>
     </div>
   </section>
 
@@ -309,8 +309,8 @@
       <h2 class="section-title">Nine years, one thread: systems that outlast their first version</h2>
     </div>
     <div class="about-body">
-      <p>I've spent my career across the full lifecycle of backend platforms — from rebuilding a C++ middleware system in Java at Verizon, to leading microservices and API contract design at Freshworks. What ties it together is a focus on systems that other engineers can build on without re-learning them: clear contracts, sane defaults, and architecture decisions someone can still explain two years later.</p>
-      <p>As a Technical Lead, I split my time between system design, technical roadmaps, and mentoring the engineers who turn those decisions into shipped product. I've recently folded AI-assisted development — Cursor and Claude — into that workflow, using prompt engineering for code generation, test scaffolding, and documentation, to move faster without trading away engineering quality.</p>
+      <p>I've spent my career across the backend lifecycle rebuilding legacy middleware in Java at Verizon, then leading microservices and system design at Freshworks. The common thread: systems other engineers can build on without re-learning them - clear contracts, sane defaults, decisions that still make sense two years later.</p>
+      <p>As a Technical Lead, I split my time between system design, technical roadmaps, and mentoring the engineers who turn those decisions into shipped product. I've recently folded AI-assisted development into that SDLC workflow, using spec driven engineering for code generation, test scaffolding, and documentation, to move faster without trading away engineering quality.</p>
     </div>
   </section>
 
@@ -335,7 +335,7 @@
             <li>Architected a centralized time-tracking microservice shared across multiple Freshservice modules, removing redundant implementations across <span class="metric">3 teams</span> and cutting integration time by <span class="metric">40%</span>.</li>
             <li>Defined API contracts, integration strategy, and scalability guidelines, ensuring zero breaking changes post-launch across product and platform squads.</li>
             <li>Authored architecture documents and presented system design proposals to engineering leadership, aligning <span class="metric">2 product teams</span> on platform standards.</li>
-            <li>Established security practices and CI/CD pipelines (GitHub Actions, Jenkins, SonarQube) adopted across <span class="metric">3 squads</span> with <span class="metric">100% code coverage</span> — later rolled out company-wide.</li>
+            <li>Established security practices and CI/CD pipelines (GitHub Actions, Jenkins, SonarQube) adopted across <span class="metric">3 squads</span> with <span class="metric">100% code coverage</span>.</li>
             <li>Modeled CPU and memory capacity for API servers, background workers, and Kafka consumers to right-size production infrastructure.</li>
             <li>Adopted Cursor and Claude as daily development tools, applying prompt engineering for code generation, test scaffolding, and documentation.</li>
             <li>Designed hiring assessments, conducted <span class="metric">20 interviews</span>, and built evaluation rubrics used across backend hiring panels.</li>
@@ -346,7 +346,7 @@
           <p class="role-title">Senior Software Engineer (Full Stack)</p>
           <ul class="bullets">
             <li>Drove end-to-end delivery of 4 core ITSM modules (Ticket, Change, Problem, Release), migrating to an Ember.js frontend with a RESTful Ruby backend and cutting average page load time by <span class="metric">20%</span>.</li>
-            <li>Generalized the Formserv engine into a shared, module-agnostic framework used across <span class="metric">6 product modules</span>, reducing per-module development time by <span class="metric">30%</span> — earning a Spot Award.</li>
+            <li>Generalized the Formserv engine into a shared, module-agnostic framework used across <span class="metric">6 product modules</span>, reducing per-module development time by <span class="metric">30%</span>, earning a Spot Award.</li>
             <li>Served as Squad Lead for a team of <span class="metric">12 engineers</span>, owning sprint planning, backlog grooming, and retrospectives while contributing hands-on as an IC.</li>
           </ul>
         </div>
@@ -375,6 +375,19 @@
         </div>
       </div>
 
+      <div class="company-block">
+        <div class="company-head">
+          <span class="company-name">Groufye (Startup)</span>
+          <span class="company-dates">Nov 2016 — May 2017</span>
+        </div>
+        <div class="role-block" style="margin-top:18px;">
+          <p class="role-title">Software Engineer</p>
+          <ul class="bullets">
+            <li>Worked on developing and maintaining inventory management product features using React Native.</li>
+            <li>Contributed to the development of a group video calling mobile application - Groufye.</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -385,13 +398,45 @@
     </div>
     <div class="skills-grid">
       <div class="skill-group">
+        <p class="skill-label">AI Ecosystem</p>
+        <ul>
+          <li>Prompt Engineering</li>
+          <li>Cursor, Claude, Github Copilot</li>
+          <li>Google's Agent Development Kit</li>
+          <li>Vector DBs</li>
+          <li>Ollama</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <p class="skill-label">Systems & Architecture</p>
+        <ul>
+          <li>Microservices</li>
+          <li>Distributed Systems</li>
+          <li>API Design (Rest/SOAP/gRPC)</li>
+          <li>Scalability & Performance Tuning</li>
+        </ul>
+      </div>
+      
+      <div class="skill-group">
         <p class="skill-label">Frameworks</p>
         <ul>
           <li>Ruby on Rails</li>
           <li>Ember.js</li>
           <li>Spring Boot</li>
-          <li>Test-driven development</li>
+          <li>Python</li>
+          <li>Test Driven Development (TDD)</li>
           <li>AI SDLC</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <p class="skill-label">DevOps & Infrastructure</p>
+        <ul>
+          <li>CI/CD (Jenkins & GitHub Actions)</li>
+          <li>Apache Kafka</li>
+          <li>Docker</li>
+          <li>Memcache</li>
+          <li>Redis</li>
+          <li>AWS</li>
         </ul>
       </div>
       <div class="skill-group">
@@ -399,24 +444,6 @@
         <ul>
           <li>MySQL</li>
           <li>Oracle</li>
-        </ul>
-      </div>
-      <div class="skill-group">
-        <p class="skill-label">DevOps</p>
-        <ul>
-          <li>Docker</li>
-          <li>CI/CD</li>
-          <li>Jenkins</li>
-          <li>GitHub Actions</li>
-          <li>SonarQube</li>
-        </ul>
-      </div>
-      <div class="skill-group">
-        <p class="skill-label">Infrastructure</p>
-        <ul>
-          <li>Apache Kafka</li>
-          <li>Redis</li>
-          <li>Memcache</li>
         </ul>
       </div>
     </div>
@@ -428,10 +455,11 @@
       <h2 class="section-title">Noted along the way</h2>
     </div>
     <div class="award-list">
+      <div class="award"><p>Spot Awards for Time tracking microservice GA - recognized for leading the <span class="metric">design, development and deployment</span> of a scalable time tracking solution across products.</p></div>
+      <div class="award"><p>Squad and Spot Awards at Freshworks - recognized for backend API modernization, full-stack Ember.js migration, and consistent delivery excellence.</p></div>
+      <div class="award"><p>Spot Award for Formserv Generalization - commended for building a reusable form engine that accelerated feature delivery across <span class="metric">6 product modules</span>.</p></div>
+      <div class="award"><p>CI/CD Standards Adoption - GitHub Actions pipelines introduced at the squad level were later adopted as a product-wide engineering baseline.</p></div>
       <div class="award"><p>Led the IBM Integration Bus deprecation, delivering <span class="metric">$9M</span> in annual licensing savings at the organizational level.</p></div>
-      <div class="award"><p>Squad and Spot Awards at Freshworks — recognized for backend API modernization, full-stack Ember.js migration, and consistent delivery excellence.</p></div>
-      <div class="award"><p>Spot Award for Formserv Generalization — commended for building a reusable form engine that accelerated feature delivery across <span class="metric">6 product modules</span>.</p></div>
-      <div class="award"><p>CI/CD Standards Adoption — GitHub Actions pipelines introduced at the squad level were later adopted as a product-wide engineering baseline.</p></div>
     </div>
   </section>
 
